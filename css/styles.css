@@ -1,0 +1,43 @@
+
+body {
+    --lite-color: #C5E99B;
+    --med-color: #8FBC94;
+    --bg-color: #548687;
+    --logo-color: #56445D;
+	background-color: var(--bg-color);		
+}
+
+div {
+    border:1px; 
+    background-color: var(--med-color);
+    color: white;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+p {
+	color: white;
+}
+
+.expandable {
+    border: 3px;
+    background-color: var(--med-color);
+    stroke: black;
+    stroke-width: 3;
+} 
+
+.floatedBg {
+    text-align: center;
+    background-color: var(--logo-color);		
+}
+
+.twocolumns {
+    display: inline-block;
+    background-color: var(--logo-color);
+    color: white;	
+    margin: 10px;
+    border: 3px solid var(--lite-color); 
+}
+

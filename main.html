@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Hello World</title>
+	<script src="https://use.fontawesome.com/03c7521c4a.js"></script>
+</head>
+
+<body onresize="resizeWindow()">
+
+	<script src="js/scripts.js"></script>
+
+<!-- Upon resizing the window, this function takes the new dimensions and 
+applies them to hidden html paragraphs with the id's windowx and windowy -->
+	<script>
+	function resizeWindow(){
+	var w = window.innerWidth
+	|| document.documentElement.clientWidth
+	|| document.body.clientWidth;
+	var h = window.innerHeight
+	|| document.documentElement.clientHeight
+	|| document.body.clientHeight;
+	var windowx = document.getElementById("windowx");
+	var windowy = document.getElementById("windowy");
+	windowx.innerHTML = w
+	windowy.innerHTML = h 
+	//document.getElementById("infoContainer").style.width = (w/2) + 'px';
+	}
+	</script>
+		<p id="windowx">x</p>
+		<p id="windowy">x</p>
+	
+<!-- floated columns -->
+<div class="floatedBg">
+    <div class="twocolumns">
+          Look at me im in column 1 and I am a bunch of text 
+    </div>
+
+    <div class="twocolumns">
+          Look at me im in column 2
+    </div>
+</div>
+
+<br>
+
+<!-- This is an expandable textbox -->
+	<div class="expandable" id="infoContainer" style="height: : 50px;">
+		<i class="fa fa-plus-square" aria-hidden="true" id="drop" style="opacity: 1;"></i>
+		&nbsp;More Info
+		<p id="moreInfoText"></p>
+	</div>
+	<p id = "isClicked" hidden>false</p>
+
+</body>
+</html>
